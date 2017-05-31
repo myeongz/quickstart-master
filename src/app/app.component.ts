@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
 
     <router-outlet></router-outlet>
   `
-  //templateUrl: './home.component.html',
-  //styleUrls: ['./homeStyle.css'],
+
 })
 export class AppComponent  {
-  public images = ['./assets/test_img.jpg', './assets/test_img.jpg'];
+  public images = ['./test_img.jpg', './assets/test_img.jpg'];
+
 }

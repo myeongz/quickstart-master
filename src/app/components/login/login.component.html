@@ -1,0 +1,46 @@
+<html>
+<title>Login</title>
+<head></head>
+<body style="height: 795px;">
+  <div class="headerx"></div>
+  <div class="header">
+    <div id="img1" class="header"><img src="../../../assets/Logo.png"/></div>
+    <div id="error" class="header" ng-show="inputError == true">incorrect username<br>or password</div>
+    <div id="form1" class="header">Email or Username<br>
+      <input [ngModel]="user.username" (ngModelChange)="user.username=$event"
+             id="username" placeholder="Email" type="text" name="name"/><br>
+      <input type="checkbox"/>Keep me logged in</div>
+    <div id="form2" class="header">Password<br>
+      <input [ngModel]="user.password" (ngModelChange)="user.password=$event"
+             id="password" placeholder="Password" type="password" name="password"/><br>
+      Forgot my password!</div>
+  </div>
+  <input (click)="login()" type="submit" class="submit1" value="login"/>
+
+  <div class="bodyx">
+    <div id="intro1" class="bodyx">DropBook helps you connect and share with your
+      friends and family safely and securely no matter where you are in the world</div>
+    <div id="intro2" class="bodyx">We store and encrypt your personal data with a
+      third party server which is only accesible by you!</div>
+    <div id="img2" class="bodyx"><img [src]="'/assets/bg.png'"></div>
+    <div id="signup" class="bodyx">
+      <div id="intro3" class="signup">Create an account</div>
+      <div id="intro4" class="signup">It's free and always will be!</div>
+      <input id="button2" class="signup" type="submit" value="Sign Up">
+    </div>
+  </div>
+  <div class="body1">
+    <div id="conclu1" class="body1">English UK...<br><hr>
+    Learn more......</div>
+  </div>
+</body>
+{{errorMsg}}{{user.username}}{{user.password}}
+</html>
+
+
+
+
+
+
+
+
